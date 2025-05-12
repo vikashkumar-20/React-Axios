@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2D3436, #4C566A);
+  /* Gradient background */
+}
+
+.container {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Center container */
+}
+
+ul {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+  /* Increased gap between elements */
+  background-color: #2D3436;
+  color: white;
+  width: 280px;
+  /* Slightly wider card */
+  padding: 1.2rem;
+  /* More padding for content */
+  border-radius: 12px;
+  /* Rounded corners for modern look */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  /* Slightly deeper shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
+}
+
+li:hover {
+  transform: translateY(-8px);
+  /* Slightly more pronounced lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  /* Deeper shadow on hover */
+}
+
+button {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #2D3436;
+  border-radius: 4px;
+  background-color: white;
+  color: #2D3436;
+  /* Dark text for contrast */
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 0.8rem;
+  width: 48%;
+  /* Button width to be side by side */
+}
+
+button:hover {
+  background-color: #74b9ff;
+  /* Bright blue on hover */
+  color: white;
+  /* Change text to white */
+  transform: scale(1.05);
+  /* Slightly enlarge button */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+}
+
+button:nth-of-type(2) {
+  background-color: #ff7675;
+  /* Red button for delete */
+  border-color: #ff7675;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #e74c3c;
+  /* Darker red on hover */
+}
+
+p {
+  font-size: 1.1rem;
+  /* Increase font size */
+  line-height: 1.8;
+  /* Add more line height for readability */
+  margin-bottom: 1rem;
+  /* Add space below each paragraph */
+}
+
+span {
+  color: #74b9ff;
+  /* Accent color for labels */
+  font-weight: bold;
+}
+
+h3 {
+  /* Assuming h3 is used for titles in the list */
+  transition: color 0.3s ease;
+  /* Smooth color change on hover */
+}
+
+li:hover h3 {
+  color: #74b9ff;
+  /* Highlight title on hover */
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+form input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #74b9ff;
+}
+
+form button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #74b9ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+form button:focus {
+  outline: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
